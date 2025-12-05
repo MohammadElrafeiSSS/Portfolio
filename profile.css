@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(243, 238, 232);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+
+.logo {
+    text-decoration: none;
+    color: rgb(24, 41, 58);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: rgb(48, 103, 192);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: rgb(190, 22, 22);
+    transition: 0.3s;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(matrix-falling-code-3840x2160-13665.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: white;
+    font-size: 2.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    color: rgb(107, 158, 241);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.main h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-bnt {
+    color: white;
+    background-color: rgb(48, 103, 192);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+
+.main-bnt:hover {
+    background-color: rgb(190, 22, 22);
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.text {
+    flex: 1;
+}
+
+.profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+.profile-image img {
+    filter: brightness(1.1) contrast(1.2);
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2.5em;
+    margin-right: 20px;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(48, 103, 192);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.pro-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects .pro-content {
+    margin-top: 30px;
+}
+
+.pro-card {
+    background-color: white;
+    border: 1px solid rgb(200, 200, 200);
+    min-height: 14em;
+    width: 25em;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 15px;
+    transition: 0.5s ease;
+}
+
+.pro-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.pro-card:hover .pro-image img {
+    transform: scale(1.05);
+    transition: 0.5s;
+    opacity: 0.9;
+}
+
+.pro-image img {
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+}
+
+.pro-info {
+    padding: 1em;
+}
+
+.pro-category {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.pro-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+.details {
+    text-decoration: none;
+    color: rgb(48, 103, 192);
+}
+
+.details:hover {
+    color: rgb(190, 22, 22);
+}
+
+.card-contact {
+    background-color: rgb(15, 18, 39);
+}
+
+.contant {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    ;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    transform: scale(1.05);
+    transition: 0.7s ease;
+    opacity: 0.9;
+}
+
+.card .icon {
+    font-size: 3em;
+    color: rgb(48, 103, 192);
+    margin-bottom: 10px;
+}
+
+.card .info p {
+    color: rgb(24, 41, 58);
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+footer .social-icons a {
+    color: rgb(24, 53, 99);
+    font-size: 2em;
+    margin-right: 15px;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+footer {
+    background-color: rgb(243, 238, 232);
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+footer p span {
+    color: rgb(48, 103, 192);
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(48, 103, 192);
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation a {
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    .main {
+        padding-top: 120px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main h2 {
+        font-size: 1.6em;
+    }
+
+    .main h3 {
+        font-size: 1.2em;
+    }
+
+    .main-bnt {
+        padding: 0.7em 1.5em;
+        font-size: 1em;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .pro-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    header {
+        padding: 10px 40px;
+    }
+
+    section {
+        padding: 80px 40px;
+    }
+
+    .pro-card {
+        width: 45%;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pro-card {
+        width: 23em;
+    }
+}
